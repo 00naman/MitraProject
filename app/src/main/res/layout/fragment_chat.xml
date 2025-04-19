@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support Groups"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Buttons for Different Group Chats -->
+        <Button
+            android:id="@+id/btn_anxiety_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anxiety Support Group"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btn_depression_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depression Support Group"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btn_stress_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stress Relief Group"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btn_general_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Wellness Chat"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

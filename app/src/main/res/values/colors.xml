@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mitra Brand Colors -->
+    <color name="mitra_primary">#7FBCD2</color>
+    <color name="mitra_primary_dark">#559CAD</color>
+    <color name="mitra_secondary">#F4A261</color>
+    <color name="mitra_background">#F7F9FA</color>
+    <color name="mitra_bg">#FAFAFA</color> <!-- ← This was missing -->
+
+    <!-- Basics -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+</resources>

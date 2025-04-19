@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/health"
+        android:contentDescription="App Logo" />
+
+    <Button
+        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you today!"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/btn_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talk to other people"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/btn_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Support"/>
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/btn_anxiety_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relief"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/mitra_primary"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/btn_open_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mitra Chat"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mitra_primary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+
+</LinearLayout>

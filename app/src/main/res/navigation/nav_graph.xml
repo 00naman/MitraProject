@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mitraproject.ui.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/moodFragment"
+        android:name="com.example.mitraproject.ui.MoodFragment"
+        android:label="Mood Tracker" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.mitraproject.ui.ChatFragment"
+        android:label="Anonymous Chat" />
+
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.mitraproject.ui.SupportFragment"
+        android:label="Support" />
+
+</navigation>

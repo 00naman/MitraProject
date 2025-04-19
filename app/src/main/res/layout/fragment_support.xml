@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need help? Talk to someone from these mental health helplines:"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- KIRAN Helpline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KIRAN Mental Health Helpline"
+            android:textColor="@color/mitra_primary_dark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_call_kiran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call "/>
+
+        <!-- Vandrevala Foundation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vandrevala Foundation Helpline"
+            android:textColor="@color/mitra_primary_dark"
+
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_call_vandrevala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call "/>
+
+        <!-- Snehi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snehi Helpline"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/mitra_primary_dark"
+
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_call_snehi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call "/>
+
+        <!-- iCall TISS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iCall TISS Mental Health Support"
+            android:textSize="16sp"
+            android:textColor="@color/mitra_primary_dark"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_call_icall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call "/>
+
+    </LinearLayout>
+</ScrollView>

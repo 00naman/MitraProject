@@ -1,0 +1,14 @@
+{
+  "anxiety": [
+    "I'm here for you. Try some deep breathing.",
+    "Would you like to talk about what's triggering your anxiety?"
+  ],
+  "depression": [
+    "I'm sorry you're feeling this way. You're not alone.",
+    "It helps to talk—I'm listening."
+  ],
+  "greeting": [
+    "Hi! How are you feeling today?",
+    "Hey there. Want to talk about your day?"
+  ]
+}
