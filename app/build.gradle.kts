@@ -51,9 +51,15 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
     // --- Firebase (Auth, Firestore) ---
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+
+//    implementation("com.google.firebase:firebase-auth:22.3.1") // Latest version
+//    implementation("com.google.firebase:firebase-firestore:24.10.0")
 
     // --- Navigation Component ---
     implementation("androidx.navigation:navigation-fragment:2.7.7")

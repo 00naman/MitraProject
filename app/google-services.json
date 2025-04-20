@@ -12,7 +12,20 @@
           "package_name": "com.example.mitraproject"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "173186756862-09bunf254rls5s9suholvmhh2s7e4rq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mitraproject",
+            "certificate_hash": "531dcac4f81a5a1dcb18e6559c3e4cc85d946e2d"
+          }
+        },
+        {
+          "client_id": "173186756862-erm6a8qbvn3i412jd2ppujphjm9g01v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBE99DQ4R5mEmovSesDF9HaoicRxQ4oOOg"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173186756862-erm6a8qbvn3i412jd2ppujphjm9g01v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
