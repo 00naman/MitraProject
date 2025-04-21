@@ -10,42 +10,53 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.navigation.Navigation;
+import androidx.viewpager2.widget.ViewPager2;
+
 import com.example.mitraproject.R;
+import com.example.mitraproject.adapters.CarouselAdapter;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    public HomeFragment() {
-        // Required empty public constructor
-    }
+    public HomeFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        ViewPager2 viewPager = view.findViewById(R.id.cardCarousel);
 
-        view.findViewById(R.id.btn_mood).setOnClickListener(v ->
-                Navigation.findNavController(view).navigate(R.id.moodFragment));
+        List<String> cardItems = Arrays.asList(
+                "How are you today!",
+                "Talk to other people",
+                "Get Support",
+                "Relief",
+                "Mitra Chat"
+        );
 
-        view.findViewById(R.id.btn_chat).setOnClickListener(v ->
-                Navigation.findNavController(view).navigate(R.id.chatFragment));
-
-        view.findViewById(R.id.btn_support).setOnClickListener(v ->
-                Navigation.findNavController(view).navigate(R.id.supportFragment));
-
-        Button chatButton = view.findViewById(R.id.btn_open_chat);
-        chatButton.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), ChatActivity.class);
-            startActivity(intent);
+        CarouselAdapter adapter = new CarouselAdapter(cardItems, text -> {
+            switch (text) {
+                case "How are you today!":
+                    Navigation.findNavController(view).navigate(R.id.moodFragment);
+                    break;
+                case "Talk to other people":
+                    Navigation.findNavController(view).navigate(R.id.chatFragment);
+                    break;
+                case "Get Support":
+                    Navigation.findNavController(view).navigate(R.id.supportFragment);
+                    break;
+                case "Relief":
+                    startActivity(new Intent(getActivity(), SandGameActivity.class));
+                    break;
+                case "Mitra Chat":
+                    startActivity(new Intent(getActivity(), ChatActivity.class));
+                    break;
+            }
         });
 
-        Button gameButton = view.findViewById(R.id.btn_anxiety_game);
-        gameButton.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), SandGameActivity.class);
-            startActivity(intent);
-        });
-
-
+        viewPager.setAdapter(adapter);
         return view;
     }
 }
