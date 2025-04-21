@@ -24,9 +24,12 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/mood_happy" android:text="😊" />
-            <RadioButton android:id="@+id/mood_neutral" android:text="😐" />
-            <RadioButton android:id="@+id/mood_sad" android:text="😢" />
+            <RadioButton android:id="@+id/mood_happy" android:text="😊" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/mood_neutral" android:text="😐" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/mood_sad" android:text="😢" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </RadioGroup>
 
         <!-- Sleep Question -->
@@ -41,8 +44,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/sleep_yes" android:text="Yes"/>
-            <RadioButton android:id="@+id/sleep_no" android:text="No" />
+            <RadioButton android:id="@+id/sleep_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/sleep_no" android:text="No" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RadioGroup>
 
         <!-- Stress Question -->
@@ -57,8 +62,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/stress_yes" android:text="Yes" />
-            <RadioButton android:id="@+id/stress_no" android:text="No" />
+            <RadioButton android:id="@+id/stress_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/stress_no" android:text="No" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RadioGroup>
 
         <!-- Anxiety Question -->
@@ -73,8 +80,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/anxiety_yes" android:text="Yes" />
-            <RadioButton android:id="@+id/anxiety_no" android:text="No" />
+            <RadioButton android:id="@+id/anxiety_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/anxiety_no" android:text="No" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RadioGroup>
 
         <!-- Social Interaction Question -->
@@ -89,8 +98,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/friends_yes" android:text="Yes" />
-            <RadioButton android:id="@+id/friends_no" android:text="No" />
+            <RadioButton android:id="@+id/friends_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/friends_no" android:text="No"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <!-- Bullying Experience -->
 
@@ -108,8 +119,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/bullying_yes" android:text="Yes" />
-            <RadioButton android:id="@+id/bullying_no" android:text="No" />
+            <RadioButton android:id="@+id/bullying_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/bullying_no" android:text="No"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </RadioGroup>
 
         <!-- Hopelessness (Depression Indicator) -->
@@ -124,8 +137,10 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/depression_yes" android:text="Yes" />
-            <RadioButton android:id="@+id/depression_no" android:text="No" />
+            <RadioButton android:id="@+id/depression_yes" android:text="Yes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/depression_no" android:text="No" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RadioGroup>
 
         <!-- Submit & Insights -->
