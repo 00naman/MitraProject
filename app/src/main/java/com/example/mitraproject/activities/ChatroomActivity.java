@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.mitraproject.R;
 import com.example.mitraproject.adapters.MessageAdapter;
 import com.example.mitraproject.models.Message;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -130,7 +131,7 @@ public class ChatroomActivity extends AppCompatActivity {
 
     private void sendMessage(String messageText) {
         // Create a new message object
-        String senderId = "user123"; // Replace with the actual sender ID (you can get this from Firebase Auth or a custom ID)
+        String senderId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         long timestamp = System.currentTimeMillis();
 
         Message message = new Message(senderId, messageText, timestamp);

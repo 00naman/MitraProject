@@ -11,13 +11,14 @@ import androidx.fragment.app.Fragment;
 import com.example.mitraproject.R;
 import com.example.mitraproject.activities.ChatroomListActivity;
 import com.example.mitraproject.activities.LoginActivity;
+import com.example.mitraproject.activities.PhoneLoginActivity;
 
 import java.util.Objects;
 
 
 public class ChatFragment extends Fragment {
 
-    Button button1;
+    Button button1,button2;
 
     public ChatFragment() {
         // Required empty public constructor
@@ -32,6 +33,16 @@ public class ChatFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(requireContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        button2 = view.findViewById(R.id.loginbutton2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireContext(), PhoneLoginActivity.class);
                 startActivity(intent);
             }
         });
