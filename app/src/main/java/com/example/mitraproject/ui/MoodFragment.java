@@ -1,5 +1,6 @@
 package com.example.mitraproject.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.mitraproject.R;
+import com.example.mitraproject.activities.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -36,7 +38,21 @@ public class MoodFragment extends Fragment {
 
         // Initialize Firebase
         db = FirebaseFirestore.getInstance();
-        userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        if (auth.getCurrentUser() != null) {
+            userId = auth.getCurrentUser().getUid();
+        } else {
+            // Redirect to Chat fragment (hosted in MainActivity or wherever)
+            Toast.makeText(getContext(), "Please log in first", Toast.LENGTH_SHORT).show();
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.nav_host_fragment, new ChatFragment()) // Change container ID accordingly
+                    .addToBackStack(null)
+                    .commit();
+
+            return view; // Don't continue with mood fragment setup
+        }
+
 
         moodGroup = view.findViewById(R.id.mood_group);
         sleepGroup = view.findViewById(R.id.sleep_group);
