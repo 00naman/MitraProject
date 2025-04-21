@@ -6,7 +6,7 @@
     android:background="@android:color/white">
 
     <LinearLayout
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/sleep_yes" android:text="Yes" />
+            <RadioButton android:id="@+id/sleep_yes" android:text="Yes"/>
             <RadioButton android:id="@+id/sleep_no" android:text="No" />
         </RadioGroup>
 
@@ -91,6 +91,25 @@
             android:layout_height="wrap_content">
             <RadioButton android:id="@+id/friends_yes" android:text="Yes" />
             <RadioButton android:id="@+id/friends_no" android:text="No" />
+
+            <!-- Bullying Experience -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have you experienced bullying recently?"
+            android:layout_marginTop="24dp" />
+
+        <RadioGroup
+            android:id="@+id/bullying_group"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/bullying_yes" android:text="Yes" />
+            <RadioButton android:id="@+id/bullying_no" android:text="No" />
         </RadioGroup>
 
         <!-- Hopelessness (Depression Indicator) -->

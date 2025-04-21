@@ -12,7 +12,7 @@ public class SandGameView extends View {
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final List<SandParticle> particles = new ArrayList<>();
     private final Random random = new Random();
-    private final int maxParticles = 1000; // limit particles
+    private final int maxParticles = 500; // limit particles
 
     public SandGameView(Context context) {
         super(context);

@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
     <LinearLayout
-        android:layout_marginTop="40dp"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -14,74 +12,38 @@
         android:gravity="center_horizontal">
 
         <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/tv_location_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Need help? Talk to someone from these mental health helplines:"
+            android:text="Detecting your location..."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tv_helpline_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/mitra_primary_dark"
             android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_marginBottom="24dp"/>
+            android:visibility="gone" />
 
-        <!-- KIRAN Helpline -->
         <TextView
+            android:id="@+id/tv_helpline_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KIRAN Mental Health Helpline"
-            android:textColor="@color/mitra_primary_dark"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:text=""
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
         <Button
-            android:id="@+id/btn_call_kiran"
+            android:id="@+id/btn_call_helpline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Call "/>
-
-        <!-- Vandrevala Foundation -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vandrevala Foundation Helpline"
-            android:textColor="@color/mitra_primary_dark"
-
-            android:textSize="16sp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"/>
-        <Button
-            android:id="@+id/btn_call_vandrevala"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call "/>
-
-        <!-- Snehi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Snehi Helpline"
-            android:textSize="16sp"
-            android:layout_marginTop="24dp"
-            android:textColor="@color/mitra_primary_dark"
-
-            android:layout_marginBottom="8dp"/>
-        <Button
-            android:id="@+id/btn_call_snehi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call "/>
-
-        <!-- iCall TISS -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="iCall TISS Mental Health Support"
-            android:textSize="16sp"
-            android:textColor="@color/mitra_primary_dark"
-
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"/>
-        <Button
-            android:id="@+id/btn_call_icall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call "/>
-
+            android:text="Call Helpline"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
 </ScrollView>
